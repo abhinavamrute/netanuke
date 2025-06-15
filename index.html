@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETANUKE - The Meme Coin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 20px;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            vertical-align: middle;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #004aad;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #003087;
+        }
+        .social-links {
+            margin: 20px 0;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #004aad;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+        .social-links img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+        .coin-address {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        .coin-address:hover {
+            background-color: #e0e0e0;
+        }
+        footer {
+            background-color: #004aad;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="netan.jpeg" alt="NETANUKE Logo">
+        <h1>NETANUKE</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome to NETANUKE - The Meme Coin</h2>
+        <p>Inspired by the bold leadership of Benjamin Netanyahu, NETANUKE is the meme coin that stands strong in the crypto world! Join the movement and embrace the power of NETANUKE, where memes meet financial ambition.</p>
+        <p>Ready to dive in? Stay tuned for more updates and join our community to be part of the revolution!</p>
+        <div class="social-links">
+            <a href="https://x.com/NetanNuke" target="_blank">
+                <img src="netan.jpeg" alt="Twitter/X Logo">
+                Twitter/X
+            </a>
+            <a href="https://t.me/netannuke" target="_blank">
+                <img src="netan.jpeg" alt="Telegram Logo">
+                Telegram
+            </a>
+        </div>
+        <p>Coin Address: <span class="coin-address" onclick="copyAddress()">0x1234567890abcdef1234567890abcdef12345678</span></p>
+        <a href="#" class="button">Join the Community</a>
+    </div>
+    <footer>
+        <p>© 2025 NETANUKE. All rights reserved.</p>
+    </footer>
+    <script>
+        // Basic interactivity: Alert when the Join button is clicked
+        document.querySelector('.button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Stay tuned! NETANUKE community links coming soon!');
+        });
+
+        // Copy coin address to clipboard
+        function copyAddress() {
+            const address = '0x1234567890abcdef1234567890abcdef12345678';
+            navigator.clipboard.writeText(address).then(() => {
+                alert('Coin address copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy address. Please try again.');
+            });
+        }
+    </script>
+</body>
+</html>
